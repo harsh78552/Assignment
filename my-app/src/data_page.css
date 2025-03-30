@@ -1,0 +1,155 @@
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;  /* Darker background for a more premium feel */
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.container {
+    background: transparent;  /* Remove the background box */
+    padding: 50px;  /* Slightly more spacious padding */
+    border-radius: 0px;  /* Remove border radius */
+    box-shadow: none;  /* Remove the shadow for a flat design */
+    width: 90%;
+    max-width: 950px;  /* Slightly larger max-width */
+    min-height: 650px;  /* Slightly taller height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title */
+h1 {
+    color: #00aaff;
+    font-size: 2.2rem;  /* Slightly larger title */
+    margin-bottom: 40px;  /* Increased margin for breathing space */
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.5px;  /* Add letter-spacing for a more polished look */
+}
+
+/* Card Styling */
+.card {
+    background: transparent;  /* Remove the background box */
+    padding: 25px;  /* Slightly more padding for the cards */
+    border-radius: 8px;  /* Slightly rounded corners */
+    border: 1px solid #333;  /* Add a solid border around the card */
+    box-shadow: none;  /* Remove the shadow */
+    width: 100%;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-7px);  /* Slightly larger hover effect */
+    box-shadow: none;  /* Remove shadow on hover */
+}
+
+/* Card Content */
+.card h2 {
+    color: #00aaff;
+    font-size: 1.6rem;  /* Slightly larger subtitle */
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+.card-content {
+    background: transparent;  /* Remove background from content */
+    padding: 18px;  /* Slightly larger padding for a comfortable feel */
+    border-radius: 0px;  /* Remove border radius */
+    color: #ddd;
+}
+
+.card-content div {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.card-content div:last-child {
+    border-bottom: none;
+}
+
+.label {
+    font-weight: 600;
+    color:pink;
+}
+
+.value {
+    color: #dddddd;
+    text-align: right;
+    word-wrap: break-word;
+}
+
+/* Pagination & Buttons */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;  /* Larger gap for better spacing */
+    margin-top: 30px;
+}
+
+.button {
+    padding: 15px 30px;  /* Larger buttons for better usability */
+    border: none;
+    border-radius: 10px;  /* Softer corners for buttons */
+    font-size: 1.1rem;  /* Slightly larger font size for buttons */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.button-primary {
+    background: #007bff;
+    color: white;
+}
+
+.button-primary:hover {
+    background: #0056b3;
+}
+
+.button-secondary {
+    background: #ff4757;
+    color: white;
+}
+
+.button-secondary:hover {
+    background: #d12e3c;
+}
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Ensure Everything is Centered in a Box */
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Interactive Title */
+.clickable-title {
+    cursor: pointer;
+    color: #00aaff;
+    font-size: 1.5rem;  /* Slightly larger interactive title */
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+    letter-spacing: 1px;  /* Subtle letter-spacing for the title */
+}
+
+.clickable-title:hover {
+    color: #ffd700;
+    transform: translateY(-2px);  /* Subtle hover effect */
+}
